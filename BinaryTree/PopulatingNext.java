@@ -61,7 +61,7 @@ class Solution {
     }
 }
 
-public class PopulatingNext117 {
+public class PopulatingNext {
     public static void main(String[] args) {
 
         // Creating a sample binary tree:
