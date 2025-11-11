@@ -12,7 +12,6 @@
 
 //! Initially, all next pointers are set to NULL.
 
-package BinaryTree;
 
 class Node {
     public int val;
