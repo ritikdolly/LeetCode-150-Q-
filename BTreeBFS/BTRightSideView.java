@@ -8,7 +8,6 @@
 // Output: [1,3,4]
 
 
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -83,4 +82,28 @@ public class BTRightSideView {
         }
     }
 
+    // ---------------- MAIN (psvm) ----------------
+    public static void main(String[] args) {
+
+        // Building a sample tree:
+        //        1
+        //     /     \
+        //    2       3
+        //     \        \
+        //      5        4
+        TreeNode root = new TreeNode(1,
+                new TreeNode(2, null, new TreeNode(5)),
+                new TreeNode(3, null, new TreeNode(4))
+        );
+
+        // BFS Test
+        SolutionBFS bfs = new SolutionBFS();
+        List<Integer> bfsResult = bfs.rightSideView(root);
+        System.out.println("Right Side View (BFS): " + bfsResult);
+
+        // DFS Test
+        SolutionDFS dfs = new SolutionDFS();
+        List<Integer> dfsResult = dfs.rightSideView(root);
+        System.out.println("Right Side View (DFS): " + dfsResult);
+    }
 }
