@@ -42,11 +42,14 @@ https://leetcode.com/studyplan/top-interview-150/
 
 | Topic        | Progress       |
 |-------------|----------------|
-| LinkedList   | In Progress ✅ |
-| Arrays       | Pending ⏳     |
-| Strings      | Pending ⏳     |
-| DP           | Pending ⏳     |
-| Others       | Will expand ➜  |
+| LinkedList    | In Progress ✅ |
+| Binary Tree   | In Progress ✅ |
+| Graph General | In Progress ✅ |
+| Math          | In Progress ✅ |
+| Arrays        | Pending ⏳     |
+| Strings       | Pending ⏳     |
+| DP            | Pending ⏳     |
+| Others        | Will expand ➜  |
 
 Progress will be updated consistently as more solutions are added.
 
