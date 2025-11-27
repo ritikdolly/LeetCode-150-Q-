@@ -44,7 +44,7 @@ https://leetcode.com/studyplan/top-interview-150/
 |-------------|----------------|
 | LinkedList    | In Progress ✅ |
 | Binary Tree   | In Progress ✅ |
-| Graph General | In Progress ✅ |
+| Graph General | Completed ✅ |
 | Math          | In Progress ✅ |
 | Arrays        | Pending ⏳     |
 | Strings       | Pending ⏳     |
