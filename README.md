@@ -44,10 +44,11 @@ https://leetcode.com/studyplan/top-interview-150/
 |-------------|----------------|
 | LinkedList    | In Progress ✅ |
 | Binary Tree   | In Progress ✅ |
+| Heap          | In Progress ✅ |
 | Graph General | Completed ✅   |
 | Math          | In Progress ✅ |
 | Arrays        | Pending ⏳     |
-| Backtracking  | Pending ⏳     |
+| Backtracking  | Completed ✅   |
 | Strings       | Pending ⏳     |
 | DP            | Pending ⏳     |
 | Others        | Will expand ➜  |
