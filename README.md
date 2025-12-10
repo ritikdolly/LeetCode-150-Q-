@@ -42,16 +42,17 @@ https://leetcode.com/studyplan/top-interview-150/
 
 | Topic        | Progress       |
 |-------------|----------------|
-| LinkedList    | In Progress ✅ |
-| Binary Tree   | In Progress ✅ |
-| Heap          | In Progress ✅ |
-| Graph General | Completed ✅   |
-| Math          | In Progress ✅ |
-| Arrays        | Pending ⏳     |
-| Backtracking  | Completed ✅   |
-| Strings       | Pending ⏳     |
-| DP            | Pending ⏳     |
-| Others        | Will expand ➜  |
+| LinkedList          | In Progress ✅ |
+| Binary Tree         | In Progress ✅ |
+| Heap                | Completed ✅   |
+| Graph General       | Completed ✅   |
+| Multidimensional DP | In Progress ✅ |
+| Math                | In Progress ✅ |
+| Arrays              | Pending ⏳     |
+| Backtracking        | Completed ✅   |
+| Strings             | Pending ⏳     |
+| DP                  | Pending ⏳     |
+| Others              | Will expand ➜  |
 
 Progress will be updated consistently as more solutions are added.
 
