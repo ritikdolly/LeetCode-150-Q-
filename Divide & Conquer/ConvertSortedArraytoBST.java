@@ -47,10 +47,8 @@ public class ConvertSortedArraytoBST {
         }
     }
     public static void main(String[] args) {
-        Solution sol = new ConvertSortedArraytoBST().new Solution();
-        int[] nums = { -10, -3, 0, 5, 9 };
-        TreeNode bstRoot = sol.sortedArrayToBST(nums);
-        // You can add code here to print or verify the structure of the BST if needed
+      // You can add test cases here to test the Solution class
+      
     }
 
 }
