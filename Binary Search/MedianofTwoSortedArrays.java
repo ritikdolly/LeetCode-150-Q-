@@ -127,7 +127,6 @@ public class MedianofTwoSortedArrays {
         }
 
     }
-
     public static void main(String[] args) {
         Solution sol = new MedianofTwoSortedArrays().new Solution();
         int[] nums1 = { 1, 3 };
