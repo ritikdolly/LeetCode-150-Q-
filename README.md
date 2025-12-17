@@ -48,6 +48,7 @@ https://leetcode.com/studyplan/top-interview-150/
 | Graph General       | Completed ✅   |
 | Divide & Conquer    | In Progress ✅ |
 | Binary Search       | In Progress ✅ |
+| Bit Manipulation    | In Progress ✅ |
 | Multidimensional DP | In Progress ✅ |
 | Math                | In Progress ✅ |
 | Arrays              | Pending ⏳     |
