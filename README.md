@@ -46,7 +46,7 @@ https://leetcode.com/studyplan/top-interview-150/
 | Binary Tree         | In Progress ✅ |
 | Heap                | Completed ✅   |
 | Graph General       | Completed ✅   |
-| Divide & Conquer    | In Progress ✅ |
+| Divide & Conquer    | Complete ✅    |
 | Binary Search       | In Progress ✅ |
 | Bit Manipulation    | In Progress ✅ |
 | Multidimensional DP | In Progress ✅ |
