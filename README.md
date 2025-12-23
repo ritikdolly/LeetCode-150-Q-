@@ -42,7 +42,7 @@ https://leetcode.com/studyplan/top-interview-150/
 
 | Topic        | Progress       |
 |-------------|----------------|
-| LinkedList          | In Progress ✅ |
+| LinkedList          | Complete ✅ |
 | Binary Tree         | In Progress ✅ |
 | Heap                | Completed ✅   |
 | Graph General       | Completed ✅   |

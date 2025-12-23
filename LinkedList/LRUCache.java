@@ -18,78 +18,87 @@
 import java.util.HashMap;
 import java.util.Map;
 
-import org.w3c.dom.Node;
 
 public class LRUCache {
+    static class Node {
+        int key, value;
+        Node next, prev;
 
-    class LRUCache {
-        static class Node {
-            int key, value;
-            Node next, prev;
-
-            Node(int k, int v) {
-                key = k;
-                value = v;
-            }
-
-        }
-
-        private static int capacity;
-        private static Map<Integer, Node> map;
-        private static Node head, tail;
-
-        LRUCache(int cap) {
-            capacity = cap;
-            map = new HashMap<>();
-            head = new Node(0, 0);
-            tail = new Node(0, 0);
-            head.next = tail;
-            tail.prev = head;
-
-        }
-
-        public static int get(int key) {
-            if (!map.containsKey(key)) {
-                return -1;
-            }
-
-            Node node = map.get(key);
-            remove(node);
-            insert(node);
-            return node.value;
-        }
-
-        public static void put(int key, int value) {
-            if (map.containsKey(key)) {
-                Node existing = map.get(key);
-                existing.value = value;
-                remove(existing);
-                insert(existing);
-            } else {
-                if (capacity == map.size()) {
-                    Node lru = tail.prev;
-                    remove(lru);
-                    map.remove(lru.key);
-                }
-                Node node = new Node(key, value);
-                insert(node);
-                map.put(key, node);
-            }
-        }
-
-        public static void remove(Node node) {
-
-            node.prev.next = node.next;
-            node.next.prev = node.prev;
-        }
-
-        // insert at first
-        public static void insert(Node node) {
-            node.next = head.next;
-            head.next.prev = node;
-            head.next = node;
-            node.prev = head;
+        Node(int k, int v) {
+            key = k;
+            value = v;
         }
 
     }
+
+    private static int capacity;
+    private static Map<Integer, Node> map;
+    private static Node head, tail;
+
+    LRUCache(int cap) {
+        capacity = cap;
+        map = new HashMap<>();
+        head = new Node(0, 0);
+        tail = new Node(0, 0);
+        head.next = tail;
+        tail.prev = head;
+
+    }
+
+    public int get(int key) {
+        if (!map.containsKey(key)) {
+            return -1;
+        }
+
+        Node node = map.get(key);
+        remove(node);
+        insert(node);
+        return node.value;
+    }
+
+    public void put(int key, int value) {
+        if (map.containsKey(key)) {
+            Node existing = map.get(key);
+            existing.value = value;
+            remove(existing);
+            insert(existing);
+        } else {
+            if (capacity == map.size()) {
+                Node lru = tail.prev;
+                remove(lru);
+                map.remove(lru.key);
+            }
+            Node node = new Node(key, value);
+            insert(node);
+            map.put(key, node);
+        }
+    }
+
+    public static void remove(Node node) {
+
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+    }
+
+    // insert at first
+    public static void insert(Node node) {
+        node.next = head.next;
+        head.next.prev = node;
+        head.next = node;
+        node.prev = head;
+    }
+
+    public static void main(String[] args) {
+        LRUCache lru = new LRUCache(2);
+        lru.put(1, 1); // cache is {1=1}
+        lru.put(2, 2); // cache is {1=1, 2=2}
+        System.out.println(lru.get(1)); // return 1
+        lru.put(3, 3); // evicts key 2, cache is {1=1, 3=3}
+        System.out.println(lru.get(2)); // return -1 (not found)
+        lru.put(4, 4); // evicts key 1, cache is {4=4, 3=3}
+        System.out.println(lru.get(1)); // return -1 (not found)
+        System.out.println(lru.get(3)); // return 3
+        System.out.println(lru.get(4)); // return 4
+    }
+
 }
