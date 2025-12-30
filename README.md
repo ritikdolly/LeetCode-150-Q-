@@ -43,7 +43,7 @@ https://leetcode.com/studyplan/top-interview-150/
 | Topic        | Progress       |
 |-------------|----------------|
 | LinkedList          | Complete ✅ |
-| Binary Tree         | In Progress ✅ |
+| Binary Tree         | Complete ✅ |
 | Heap                | Completed ✅   |
 | Graph General       | Completed ✅   |
 | Divide & Conquer    | Complete ✅    |
